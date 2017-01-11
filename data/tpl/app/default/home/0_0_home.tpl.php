@@ -22,7 +22,6 @@ a{color:<?php  echo $_W['styles']['linkcolor'];?>; text-decoration:none;}
 .home-container .title{color:#ccc;}
 .home-container .createtime{color:#999;font-size:12px}
 </style>
-qqqqqqqqqqqqqqqqq
 <div class="home-container clearfix">
 	<?php  $site_navs = modulefunc('site', 'site_navs', array (
   'func' => 'site_navs',
