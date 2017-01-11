@@ -1,0 +1,37 @@
+2017-01-11 17:06:56 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f80a74dc2498]]></ToUserName>
+<FromUserName><![CDATA[owDfCuCjIEgaLE-Fhe_S7tk9gRtM]]></FromUserName>
+<CreateTime>1484125616</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-01-11 17:06:56 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_f80a74dc2498',
+    'fromusername' => 'owDfCuCjIEgaLE-Fhe_S7tk9gRtM',
+    'createtime' => '1484125616',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'owDfCuCjIEgaLE-Fhe_S7tk9gRtM',
+    'to' => 'gh_f80a74dc2498',
+    'time' => '1484125616',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2017-01-11 17:06:56 response :
+------------
+
