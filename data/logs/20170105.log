@@ -1,0 +1,50 @@
+2017-01-05 19:02:28 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1483614144</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[1]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-01-05 19:02:28 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'toUser',
+    'fromusername' => 'fromUser',
+    'createtime' => '1483614144',
+    'msgtype' => 'text',
+    'content' => '1',
+    'msgid' => '1234567890123456',
+    'from' => 'fromUser',
+    'to' => 'toUser',
+    'time' => '1483614144',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'fwei_forms',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '15',
+    'rid' => '10',
+    'uniacid' => '1',
+    'module' => 'fwei_forms',
+    'content' => '1',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-01-05 19:02:28 response :
+------------
+Array:
+FromUserName : toUser ;
+ToUserName : fromUser ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+

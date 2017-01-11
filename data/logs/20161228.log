@@ -1,0 +1,100 @@
+2016-12-28 17:10:02 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1482916198</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[三件套]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2016-12-28 17:10:02 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'toUser',
+    'fromusername' => 'fromUser',
+    'createtime' => '1482916198',
+    'msgtype' => 'text',
+    'content' => '三件套',
+    'msgid' => '1234567890123456',
+    'from' => 'fromUser',
+    'to' => 'toUser',
+    'time' => '1482916198',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'fwei_forms',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '1',
+    'module' => 'fwei_forms',
+    'content' => '三件套',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-12-28 17:10:02 response :
+------------
+Array:
+FromUserName : toUser ;
+ToUserName : fromUser ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-12-28 18:42:54 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1482921770</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[三件套]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2016-12-28 18:42:54 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'toUser',
+    'fromusername' => 'fromUser',
+    'createtime' => '1482921770',
+    'msgtype' => 'text',
+    'content' => '三件套',
+    'msgid' => '1234567890123456',
+    'from' => 'fromUser',
+    'to' => 'toUser',
+    'time' => '1482921770',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'fwei_forms',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '14',
+    'rid' => '9',
+    'uniacid' => '1',
+    'module' => 'fwei_forms',
+    'content' => '三件套',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-12-28 18:42:54 response :
+------------
+Array:
+FromUserName : toUser ;
+ToUserName : fromUser ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
