@@ -1,63 +1,15 @@
-2017-01-11 17:06:56 trace :
-------------
-String:
-<xml><ToUserName><![CDATA[gh_f80a74dc2498]]></ToUserName>
-<FromUserName><![CDATA[owDfCuCjIEgaLE-Fhe_S7tk9gRtM]]></FromUserName>
-<CreateTime>1484125616</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[subscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
-</xml>
-
-2017-01-11 17:06:56 params :
-------------
-String:
-array (
-  'rule' => -2,
-  'module' => '',
-  'message' => 
-  array (
-    'tousername' => 'gh_f80a74dc2498',
-    'fromusername' => 'owDfCuCjIEgaLE-Fhe_S7tk9gRtM',
-    'createtime' => '1484125616',
-    'msgtype' => 'event',
-    'event' => 'subscribe',
-    'eventkey' => '',
-    'from' => 'owDfCuCjIEgaLE-Fhe_S7tk9gRtM',
-    'to' => 'gh_f80a74dc2498',
-    'time' => '1484125616',
-    'type' => 'text',
-    'redirection' => true,
-    'source' => 'subscribe',
-  ),
-)
-
-2017-01-11 17:06:56 response :
-------------
-
-2017-01-11 20:27:40 trace :
+2017-01-12 17:04:44 trace :
 ------------
 String:
 <xml><ToUserName><![CDATA[gh_f80a74dc2498]]></ToUserName>
 <FromUserName><![CDATA[owDfCuBp13gKTxf7rvIamkFTgxuc]]></FromUserName>
-<CreateTime>1484137660</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[unsubscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
+<CreateTime>1484211884</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[主体]]></Content>
+<MsgId>6374641502523260059</MsgId>
 </xml>
 
-2017-01-11 20:27:46 trace :
-------------
-String:
-<xml><ToUserName><![CDATA[gh_f80a74dc2498]]></ToUserName>
-<FromUserName><![CDATA[owDfCuBp13gKTxf7rvIamkFTgxuc]]></FromUserName>
-<CreateTime>1484137666</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[subscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
-</xml>
-
-2017-01-11 20:27:46 params :
+2017-01-12 17:04:44 params :
 ------------
 String:
 array (
@@ -67,34 +19,73 @@ array (
   array (
     'tousername' => 'gh_f80a74dc2498',
     'fromusername' => 'owDfCuBp13gKTxf7rvIamkFTgxuc',
-    'createtime' => '1484137666',
-    'msgtype' => 'event',
-    'event' => 'subscribe',
-    'eventkey' => '',
+    'createtime' => '1484211884',
+    'msgtype' => 'text',
+    'content' => '主体',
+    'msgid' => '6374641502523260059',
     'from' => 'owDfCuBp13gKTxf7rvIamkFTgxuc',
     'to' => 'gh_f80a74dc2498',
-    'time' => '1484137666',
+    'time' => '1484211884',
     'type' => 'text',
-    'redirection' => true,
-    'source' => 'subscribe',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
   ),
 )
 
-2017-01-11 20:27:46 response :
+2017-01-12 17:04:44 response :
 ------------
 
-2017-01-11 20:28:13 trace :
+2017-01-12 17:04:49 trace :
 ------------
 String:
 <xml><ToUserName><![CDATA[gh_f80a74dc2498]]></ToUserName>
 <FromUserName><![CDATA[owDfCuBp13gKTxf7rvIamkFTgxuc]]></FromUserName>
-<CreateTime>1484137693</CreateTime>
+<CreateTime>1484211889</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[主题]]></Content>
+<MsgId>6374641523998096544</MsgId>
+</xml>
+
+2017-01-12 17:04:49 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_f80a74dc2498',
+    'fromusername' => 'owDfCuBp13gKTxf7rvIamkFTgxuc',
+    'createtime' => '1484211889',
+    'msgtype' => 'text',
+    'content' => '主题',
+    'msgid' => '6374641523998096544',
+    'from' => 'owDfCuBp13gKTxf7rvIamkFTgxuc',
+    'to' => 'gh_f80a74dc2498',
+    'time' => '1484211889',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2017-01-12 17:04:49 response :
+------------
+
+2017-01-12 17:04:59 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f80a74dc2498]]></ToUserName>
+<FromUserName><![CDATA[owDfCuBp13gKTxf7rvIamkFTgxuc]]></FromUserName>
+<CreateTime>1484211899</CreateTime>
 <MsgType><![CDATA[text]]></MsgType>
 <Content><![CDATA[主页]]></Content>
-<MsgId>6374322854604594578</MsgId>
+<MsgId>6374641566947769505</MsgId>
 </xml>
 
-2017-01-11 20:28:13 params :
+2017-01-12 17:04:59 params :
 ------------
 String:
 array (
@@ -102,13 +93,13 @@ array (
   array (
     'tousername' => 'gh_f80a74dc2498',
     'fromusername' => 'owDfCuBp13gKTxf7rvIamkFTgxuc',
-    'createtime' => '1484137693',
+    'createtime' => '1484211899',
     'msgtype' => 'text',
     'content' => '主页',
-    'msgid' => '6374322854604594578',
+    'msgid' => '6374641566947769505',
     'from' => 'owDfCuBp13gKTxf7rvIamkFTgxuc',
     'to' => 'gh_f80a74dc2498',
-    'time' => '1484137693',
+    'time' => '1484211899',
     'type' => 'text',
     'event' => NULL,
     'redirection' => false,
@@ -130,7 +121,7 @@ array (
   ),
 )
 
-2017-01-11 20:28:13 response :
+2017-01-12 17:04:59 response :
 ------------
 Array:
 FromUserName : gh_f80a74dc2498 ;

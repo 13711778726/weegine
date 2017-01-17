@@ -1,0 +1,56 @@
+2017-01-13 15:16:28 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f80a74dc2498]]></ToUserName>
+<FromUserName><![CDATA[owDfCuBp13gKTxf7rvIamkFTgxuc]]></FromUserName>
+<CreateTime>1484291788</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[张三]]></Content>
+<MsgId>6374984687590088501</MsgId>
+</xml>
+
+2017-01-13 15:16:28 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_f80a74dc2498',
+    'fromusername' => 'owDfCuBp13gKTxf7rvIamkFTgxuc',
+    'createtime' => '1484291788',
+    'msgtype' => 'text',
+    'content' => '张三',
+    'msgid' => '6374984687590088501',
+    'from' => 'owDfCuBp13gKTxf7rvIamkFTgxuc',
+    'to' => 'gh_f80a74dc2498',
+    'time' => '1484291788',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '17',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '22',
+    'rid' => '17',
+    'uniacid' => '3',
+    'module' => 'cover',
+    'content' => '张三',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-01-13 15:16:28 response :
+------------
+Array:
+FromUserName : gh_f80a74dc2498 ;
+ToUserName : owDfCuBp13gKTxf7rvIamkFTgxuc ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
