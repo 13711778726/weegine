@@ -64,7 +64,6 @@ if( empty($uid) ){
 //调研基本信息
 
 $forms = pdo_fetch('SELECT * FROM '.tablename('fwei_forms')." WHERE rid = :rid AND uniacid = :uniacid", array(':uniacid' => $uniacid, ':rid'=>$rid) );
-
 if( empty($forms) ){
 
 	message('参数错误!', '',  'error');

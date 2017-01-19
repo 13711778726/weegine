@@ -79,6 +79,7 @@ class Fwei_formsModule extends WeModule {
 			'notice' => array(),
 			'redirect'	=>	$_GPC['redirect'],
                         'spage'	=>	$_GPC['spage'],
+		    'url' => $_GPC['url'],
 		);
 		$insert_data['notice'] = array(
 			'openid'	=>	$_GPC['notice_openid'],

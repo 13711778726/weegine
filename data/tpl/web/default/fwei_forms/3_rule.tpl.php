@@ -12,6 +12,12 @@
 		</div>
 		<?php  } ?>
 		<div class="form-group">
+			<label class="col-xs-12 col-sm-3 col-md-2 control-label">iframs链接</label>
+			<div class="col-sm-8">
+				<input type="text" class="form-control" name="url" value="<?php  echo $item['url'];?>" />
+			</div>
+		</div>
+		<div class="form-group">
 			<label class="col-xs-12 col-sm-3 col-md-2 control-label">表单标题</label>
 			<div class="col-sm-8">
 				<input type="text" class="form-control" name="title" value="<?php  echo $item['title'];?>" />
