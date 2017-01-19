@@ -393,7 +393,7 @@ require(['angular.sanitize', 'bootstrap', 'underscore', 'util'], function(angula
 		</div>
 		
 		<div class="form-group">
-			<div class="col-sm-12">
+			<div class="col-sm-12">			
 				<?php  echo module_build_form($m, $rid);?>
 			</div>
 		</div>
