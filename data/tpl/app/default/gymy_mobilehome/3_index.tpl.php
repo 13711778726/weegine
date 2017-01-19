@@ -1,0 +1,48 @@
+<?php defined('IN_IA') or exit('Access Denied');?><?php (!empty($this) && $this instanceof WeModuleSite) ? (include $this->template('/common/header', TEMPLATE_INCLUDEPATH)) : (include template('/common/header', TEMPLATE_INCLUDEPATH));?>
+<style>
+    .title{font-weight: bolder;}
+    .blue{color: blue;}
+    .red{color: red;}
+    .green{color: green;margin-right: 10px;}
+</style>
+<div class="panel panel-default">
+    <div class="panel-heading">手机号码归属地带测吉凶</div>
+    <div class="panel-body">
+        <form action="<?php  echo $this->createMobileUrl('index')?>" method="post" class="form-horizontal form" id="form"  onsubmit="return vladateForm()">
+            <div class="form-group">
+                <div class="col-xs-12 col-sm-4">
+                    <input type="text" id="name" name="name" class="form-control" value="" placeholder="请输入正确的手机号码" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 col-sm-offset-3 col-md-offset-2 col-lg-offset-2">
+                    <input name="submit" type="submit" value="提交" class="btn btn-primary"/>
+                    <input type="hidden" name="token" value="<?php  echo $_W['token'];?>"/>
+                </div>
+            </div>
+        </form>
+        <div class="content">
+            <?php  if($content != '') { ?>
+            <div class="box">
+                <div class="title">说明</div>
+                <div class="cont">
+                    <p>手机号码归属地查询，为您提供最新的中国移动、中国电信、中国联通所有手机号码归属地以及手机号码测吉凶等功能。</p>
+                    <p>输入手机号码至少前7位，可查该手机号码归属地、所属号段、手机卡类型、号码归属地地图和运营商标志。输入完整13位手机号码还可进行手机号码吉凶预测。</p>
+                </div>
+            </div>
+            <?php  } ?>
+            <?php  echo $content;?>
+        </div>
+    </div>
+</div>
+<script>
+    function vladateForm() {
+        if ($("#name").val().trim() == '') {
+            alert("您还没有填写");
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script>
+<?php (!empty($this) && $this instanceof WeModuleSite) ? (include $this->template('/common/footer', TEMPLATE_INCLUDEPATH)) : (include template('/common/footer', TEMPLATE_INCLUDEPATH));?>

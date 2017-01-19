@@ -1,0 +1,56 @@
+2017-01-19 14:28:52 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f80a74dc2498]]></ToUserName>
+<FromUserName><![CDATA[owDfCuBp13gKTxf7rvIamkFTgxuc]]></FromUserName>
+<CreateTime>1484807332</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[手机]]></Content>
+<MsgId>6377198932209796386</MsgId>
+</xml>
+
+2017-01-19 14:28:52 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_f80a74dc2498',
+    'fromusername' => 'owDfCuBp13gKTxf7rvIamkFTgxuc',
+    'createtime' => '1484807332',
+    'msgtype' => 'text',
+    'content' => '手机',
+    'msgid' => '6377198932209796386',
+    'from' => 'owDfCuBp13gKTxf7rvIamkFTgxuc',
+    'to' => 'gh_f80a74dc2498',
+    'time' => '1484807332',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '18',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '32',
+    'rid' => '18',
+    'uniacid' => '3',
+    'module' => 'cover',
+    'content' => '手机',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-01-19 14:28:52 response :
+------------
+Array:
+FromUserName : gh_f80a74dc2498 ;
+ToUserName : owDfCuBp13gKTxf7rvIamkFTgxuc ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
