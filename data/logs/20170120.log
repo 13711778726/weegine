@@ -1,0 +1,56 @@
+2017-01-20 15:20:10 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_f80a74dc2498]]></ToUserName>
+<FromUserName><![CDATA[owDfCuBp13gKTxf7rvIamkFTgxuc]]></FromUserName>
+<CreateTime>1484896810</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[阅读]]></Content>
+<MsgId>6377583237293519318</MsgId>
+</xml>
+
+2017-01-20 15:20:10 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_f80a74dc2498',
+    'fromusername' => 'owDfCuBp13gKTxf7rvIamkFTgxuc',
+    'createtime' => '1484896810',
+    'msgtype' => 'text',
+    'content' => '阅读',
+    'msgid' => '6377583237293519318',
+    'from' => 'owDfCuBp13gKTxf7rvIamkFTgxuc',
+    'to' => 'gh_f80a74dc2498',
+    'time' => '1484896810',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'fwei_forms',
+  'rule' => '21',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '29',
+    'rid' => '21',
+    'uniacid' => '3',
+    'module' => 'fwei_forms',
+    'content' => '阅读',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-01-20 15:20:10 response :
+------------
+Array:
+FromUserName : gh_f80a74dc2498 ;
+ToUserName : owDfCuBp13gKTxf7rvIamkFTgxuc ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
