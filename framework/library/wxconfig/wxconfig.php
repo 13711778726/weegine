@@ -1010,7 +1010,7 @@ class wxconfig
 	public function getSignPackage() {
 
 		$jsapiTicket = $this->getJsApiTicket();
-	
+		
 		// 注意 URL 一定要动态获取，不能 hardcode.
 		$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
 		$url = "$protocol$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -1035,12 +1035,13 @@ class wxconfig
 	}
 	
 	private function getJsApiTicket() {
+	    
 		// jsapi_ticket 应该全局存储与更新，以下代码以写入到文件中做示例
-		if (!$this->access_token && !$this->checkAuth()) return false;
+		//if (!$this->access_token && !$this->checkAuth()) return false;
 		$authname = 'wechat_jsapi_ticket'.$this->appid;
-		
-		$rs = S($authname);
-		
+
+		$rs = $authname;
+
 		if ($rs)  {
 			$this->jsapi_ticket = $rs;
 			
@@ -1056,7 +1057,7 @@ class wxconfig
 			
 				$this->jsapi_ticket = $ticket;
 				
-				S($authname,$this->jsapi_ticket,7000);				
+				//S($authname,$this->jsapi_ticket,7000);				
 			
 				return $this->jsapi_ticket;
 			}
