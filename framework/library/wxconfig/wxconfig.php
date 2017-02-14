@@ -1036,8 +1036,8 @@ class wxconfig
 	
 	private function getJsApiTicket() {
 		// jsapi_ticket 应该全局存储与更新，以下代码以写入到文件中做示例
-		if (!$this->access_token && !$this->checkAuth()) return false;
-		$authname = 'wechat_jsapi_ticket'.$this->appid;
+		//if (!$this->access_token && !$this->checkAuth()) return false;
+		//$authname = 'wechat_jsapi_ticket'.$this->appid;
 
 		//$rs = S($authname);
 		
