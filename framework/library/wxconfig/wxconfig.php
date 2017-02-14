@@ -1037,32 +1037,24 @@ class wxconfig
 	private function getJsApiTicket() {
 	    
 		// jsapi_ticket 应该全局存储与更新，以下代码以写入到文件中做示例
-		//if (!$this->access_token && !$this->checkAuth()) return false;
-		$authname = 'wechat_jsapi_ticket'.$this->appid;
-
-		$rs = $authname;
-
-		if (0)  {
-			$this->jsapi_ticket = $rs;
-			
-			return $rs;
-		}
-		else {
-			// 如果是企业号用以下 URL 获取 ticket
-			// $url = "https://qyapi.weixin.qq.com/cgi-bin/get_jsapi_ticket?access_token=$accessToken";
-			$url = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&access_token=$this->access_token";
-			$res = json_decode($this->http_get($url));
-			$ticket = $res->ticket;
-			if ($ticket) {
-			
-				$this->jsapi_ticket = $ticket;
-				
-				//S($authname,$this->jsapi_ticket,7000);				
-			
-				return $this->jsapi_ticket;
-			}
-			
-		}			
+        $data = json_decode($this->get_php_file("jsapi_ticket.php"));
+        if ($data->expire_time < time()) {
+          $accessToken = $this->getAccessToken();
+          // 如果是企业号用以下 URL 获取 ticket
+          // $url = "https://qyapi.weixin.qq.com/cgi-bin/get_jsapi_ticket?access_token=$accessToken";
+          $url = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&access_token=$accessToken";
+          $res = json_decode($this->httpGet($url));
+          $ticket = $res->ticket;
+          if ($ticket) {
+            $data->expire_time = time() + 7000;
+            $data->jsapi_ticket = $ticket;
+            $this->set_php_file("jsapi_ticket.php", json_encode($data));
+          }
+        } else {
+          $ticket = $data->jsapi_ticket;
+        }
+    
+        return $ticket;			
 	}
 	
 	private function createNonceStr($length = 16) {
