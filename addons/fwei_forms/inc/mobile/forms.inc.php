@@ -52,7 +52,6 @@ $weObj = new \wxconfig($options);
 
 $signPackage = $weObj->getSignPackage();
 
-$sign[] = $signPackage;
 $rid = intval( $_GPC['id'] );
 
 $uniacid = $_W['uniacid'];

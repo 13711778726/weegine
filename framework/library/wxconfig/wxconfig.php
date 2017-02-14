@@ -1008,6 +1008,7 @@ class wxconfig
 	
 	//微信分享
 	public function getSignPackage() {
+
 		$jsapiTicket = $this->getJsApiTicket();
 	
 		// 注意 URL 一定要动态获取，不能 hardcode.
@@ -1035,17 +1036,13 @@ class wxconfig
 	
 	private function getJsApiTicket() {
 		// jsapi_ticket 应该全局存储与更新，以下代码以写入到文件中做示例
-		Think\Log::record("11111111111111111111111");
 		if (!$this->access_token && !$this->checkAuth()) return false;
-		Think\Log::record("2222222222222222222");
 		$authname = 'wechat_jsapi_ticket'.$this->appid;
 		
 		$rs = S($authname);
 		
 		if ($rs)  {
 			$this->jsapi_ticket = $rs;
-			Think\Log::record("已经存在");
-			Think\Log::record($rs);
 			
 			return $rs;
 		}
@@ -1059,10 +1056,7 @@ class wxconfig
 			
 				$this->jsapi_ticket = $ticket;
 				
-				S($authname,$this->jsapi_ticket,7000);
-				
-				Think\Log::record("没有存在存在");
-				Think\Log::record($ticket);
+				S($authname,$this->jsapi_ticket,7000);				
 			
 				return $this->jsapi_ticket;
 			}
