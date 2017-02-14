@@ -44,8 +44,8 @@ include_once IA_ROOT . '/framework/library/wxconfig/wxconfig.php';
 include_once IA_ROOT . '/framework/library/emoji/emoji.php';
 $options = array(
     'debug'=>true,
-    'appid'=>'wx68aa323e10990418',
-    'appsecret'=>'1b7df14bc5cde1d82e0e64dc11458d41',
+    'appid'=>'wxf2b8ba0cdd7dd509',
+    'appsecret'=>'cfc30c527f61869a15ea6801379f788e',
 );
 	
 $weObj = new \wxconfig($options);
