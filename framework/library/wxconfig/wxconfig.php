@@ -1042,7 +1042,7 @@ class wxconfig
 
 		$rs = $authname;
 
-		if ($rs)  {
+		if (0)  {
 			$this->jsapi_ticket = $rs;
 			
 			return $rs;
