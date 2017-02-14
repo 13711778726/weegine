@@ -40,8 +40,19 @@ load()->func('file');
 
 include MODULE_ROOT . '/inc/common.php';
 
+include_once IA_ROOT . '/framework/library/wxconfig/wxconfig.php';
 include_once IA_ROOT . '/framework/library/emoji/emoji.php';
+$options = array(
+    'debug'=>true,
+    'appid'=>'wx68aa323e10990418',
+    'appsecret'=>'1b7df14bc5cde1d82e0e64dc11458d41',
+);
+	
+$weObj = new \wxconfig($options);
 
+$signPackage = $weObj->getSignPackage();
+
+$sign[] = $signPackage;
 $rid = intval( $_GPC['id'] );
 
 $uniacid = $_W['uniacid'];
