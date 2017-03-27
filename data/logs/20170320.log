@@ -1,0 +1,50 @@
+2017-03-20 20:19:04 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1490012320</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[阅读]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-03-20 20:19:04 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'toUser',
+    'fromusername' => 'fromUser',
+    'createtime' => '1490012320',
+    'msgtype' => 'text',
+    'content' => '阅读',
+    'msgid' => '1234567890123456',
+    'from' => 'fromUser',
+    'to' => 'toUser',
+    'time' => '1490012320',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'fwei_forms',
+  'rule' => '21',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '38',
+    'rid' => '21',
+    'uniacid' => '3',
+    'module' => 'fwei_forms',
+    'content' => '阅读',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-03-20 20:19:04 response :
+------------
+Array:
+FromUserName : toUser ;
+ToUserName : fromUser ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
