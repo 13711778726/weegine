@@ -29,7 +29,10 @@
 global $_GPC, $_W;
 
 
-
+$i = $_GPC['i'];
+$c = $_GPC['c'];
+$do = $_GPC['do'];
+$m = $_GPC['m'];
 load()->model('mc');
 
 load()->func('tpl');
@@ -59,7 +62,18 @@ $uniacid = $_W['uniacid'];
 $openid = $_W['openid'];
 
 $uid = $_W['member']['uid'];
-
+if($_GPC['act'] == 'settime'){
+    $htime = time()+3600*3;
+    $res = pdo_update('fwei_forms', array('endtime'=>$htime), array('rid'=>$rid));
+    if($res){
+        $re['data'] = date("Y-m-d H:i:s",$htime);
+        $re['status'] = 1;
+    }else{
+        $re['status'] = 0;
+    }
+    echo json_encode($re);
+    exit();
+}
 if( empty($openid) ){
 
 	$openid = $_GPC['_openid'];
@@ -326,7 +340,7 @@ if( isset($_COOKIE[$ckey]) && $_COOKIE[$ckey] ){
 	$forms_status = '恭喜您！成功领取三件套了！现在添加客服可将原来3件套，免费升级到香奈儿5件套哦！';
 }
 
-
+$endtime = date("Y-m-d H:i:s",$forms['endtime']);
 include $this->template('forms');
 
 
